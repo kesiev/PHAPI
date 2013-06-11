@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title>PHAPI Sample - Standard method</title>
+		<script src="phapi.js"></script>
+	</head>
+	<body onload="onl()">
+	</body>
+	<script>
+		function onl(){
+			// Uncomment the next line to generate the API library
+			// return PHAPI.makeApi(["div","table","tr","td","input"]);
+			PHAPI.call("phapi-standard.php",document.body)
+		};
+	</script>
+</html>

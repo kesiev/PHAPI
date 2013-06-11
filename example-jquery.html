@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>PHAPI Sample - JQuery integration</title>
+		<script src="phapi.js"></script>
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	</head>
+	<body onload="onl()">
+	</body>
+	<script>
+		function onl(){
+			// Uncomment the next line to generate the API library
+			// return PHAPI.makeApi(["div","table","tr","td","input"]);
+			PHAPI.call("phapi-jquery.php",document.body)
+		};
+	</script>
+</html>
